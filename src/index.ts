@@ -1,2 +1,4 @@
-const a=require('./moudle');
-console.log(a);
+import { createPoker, printPoker } from "./util";
+
+const poker=createPoker();
+printPoker(poker)
