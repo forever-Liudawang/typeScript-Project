@@ -1,17 +1,37 @@
-let a:string="123";
-const b:number=123;
-console.log(a)
-
-let gender:"男"|"女";
-gender="男";
-console.log(gender)
-
-let arr:[number,string];
-arr=[21,"fdf"]
-type login={
-    user:string,
-    password:number
+type color="♥"|"♠"|"♦"|"♣"
+type card={
+    number:number,
+    color:color
 }
-function Login(key:login){
-    
+type poker=card [];
+function createPoker():poker{
+    let poker:card []=[];
+    for(let i=1;i<=13;i++){
+        poker.push({
+            number:i,
+            color:"♠",
+        })
+        poker.push({
+            number:i,
+            color:"♣",
+        })
+        poker.push({
+            number:i,
+            color:"♥",
+        })
+        poker.push({
+            number:i,
+            color:"♦",
+        })
+    }
+    return poker;
 }
+
+function printPoker(poker:poker){
+    for(let i=0;i<52;i++){
+        let str=poker[i].number+poker[i].color;
+        console.log(str)
+    }
+}
+const poker=createPoker();
+printPoker(poker)
