@@ -1,0 +1,29 @@
+{
+  "name": "TypeScriptTest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon  src -e ts --exec ts-node src/index.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/forever-Liudawang/typeScript-Project.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/forever-Liudawang/typeScript-Project/issues"
+  },
+  "homepage": "https://github.com/forever-Liudawang/typeScript-Project#readme",
+  "dependencies": {
+    "@types/node": "^12.12.20",
+    "typescript": "^3.7.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2",
+    "ts-node": "^8.5.4"
+  }
+}

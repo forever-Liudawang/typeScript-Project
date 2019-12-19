@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+      "target": "ES2016",  //配置编译后js文件的版本标准
+      "module": "CommonJS", //配置编译目标使用的模块化标准
+      "lib": ["ES2016","DOM"],    //工程的编写环境
+      "outDir": "./dist",    //配置编译后的文件存储位置
+      "strictNullChecks": true,//严格的类型检查 表示null和undefined只能赋值给自身类型的值
+  },
+  "include": ["./src"]      //配置只允许编译的文件
+}
