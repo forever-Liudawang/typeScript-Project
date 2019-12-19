@@ -1,10 +1,14 @@
 {
   "compilerOptions": {
       "target": "ES2016",  //配置编译后js文件的版本标准
-      "module": "CommonJS", //配置编译目标使用的模块化标准
+      "module": "CommonJS", //配置编译目标(生成的js文件)使用的模块化标准
       "lib": ["ES2016","DOM"],    //工程的编写环境
       "outDir": "./dist",    //配置编译后的文件存储位置
       "strictNullChecks": true,//严格的类型检查 表示null和undefined只能赋值给自身类型的值
+      "noImplicitUseStrict": false, //编译结果中不包含"use strict"字样
+      "removeComments": true,    //  移除编译生成的js文件中的注释
+      "noEmitOnError": true,      //编译出错时不生成js文件
+      "esModuleInterop": true     //将ts文件中的非es模块的导入导出变成es模块的导入导出的形式
   },
   "include": ["./src"]      //配置只允许编译的文件
 }
