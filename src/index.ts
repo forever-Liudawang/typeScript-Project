@@ -12,7 +12,7 @@ function filter<T>(arr:T [],callback:callback<T>):T[]{
         })
         return newArr;
 }
-console.log(filter([21,4,3,8,65],(value,index)=>value%2==0))
+console.log(filter([4,3,8,65],(value,index)=>value%2==0))
 
 
 /**
